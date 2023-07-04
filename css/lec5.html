@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .container{
+            background-color: aqua;
+            height: 300px;
+            width: 500px;
+            margin: auto;
+            padding: 0 35px;
+            position: relative;
+        }
+        .box1{
+            background-color: red;
+            color: white;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* position: relative; */
+            /* top: 200px; */
+            /* left: 200px; */
+            /* bottom: 100px; */
+            /* right: 200px; */
+
+            position: absolute;
+            top: 0;
+            /* left: 0; */
+            right: 200px;
+
+        }
+        .box2{
+            background-color: rgb(0, 255, 0);
+            color: rgb(18, 17, 17);
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p .a{
+            
+            background-color: aqua;
+            padding: 10px;
+            border: 1px solid black;
+            display: inline;
+            width: 200px;
+            height: 500px;
+        }
+        p .b{
+            background-color: aqua;
+            padding: 10px;
+            border: 1px solid black;
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+        }
+        p .c{
+            background-color: aqua;
+            padding: 10px;
+            border: 1px solid black;
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+        a{
+            display: block;
+        }
+        img{
+            display: block;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .demo1{
+            border: 1px solid black;
+            top: 100px;
+            left: 150px;
+            z-index: 1;
+        }
+        .demo2{
+            border: 1px solid rgb(208, 7, 7);
+            top: 150px;
+            left: 200px;
+            z-index: -1;
+        }
+        .demo3{
+            border: 1px solid rgb(24, 150, 17);
+            top: 200px;
+            left: 250px;
+            /* z-index: -5; */
+        }
+        .demo4{
+            border: 1px solid rgb(145, 15, 125);
+            top: 250px;
+            left: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h2>position property</h2>
+    <pre>
+        static
+        relative
+        absoute
+        sticky
+        fixed
+    </pre>
+
+    <!-- <div class="container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus explicabo ratione doloribus cupiditate. Ipsam, totam quasi iure molestiae deserunt alias at provident reiciendis facere error consectetur officiis doloremque culpa!</p>
+        <div class="box1">
+            box1
+        </div>
+        <div class="box2">
+            box2
+        </div>
+    </div> -->
+
+    <h2>display</h2>
+    <pre>
+        inline 
+        inline-block  
+        block
+    </pre>
+
+    <h2>inline</h2>
+    <pre> span a img</pre>
+    <p>Lorem ipsum dolor sit amet <span class="a">lorem</span> consectetur adipisicing elit. Totam, voluptatum. <span class="a">lorem</span></p>
+    <a href="">home</a>
+    <a href="">home</a>
+    <a href="">home</a>
+    <a href="">home</a>
+    <img src="/image3.jpg" alt="" width="50px">
+    <img src="/image3.jpg" alt="" width="50px">
+    <img src="/image3.jpg" alt="" width="50px">
+
+    <h2> inline-block</h2>
+    <p>Lorem ipsum dolor sit <span class="b">lorem</span> amet consectetur adipisicing elit. At similique dolorum unde atque dicta numquam quidem soluta! Sapiente eum <span class="b">lorem</span>  consequuntur fugiat molestias deserunt aliquam possimus, eligendi dolorum iusto magni ipsam!</p>
+    
+    <h2>block</h2>
+    <p>Lorem ipsum dolor sit <span class="c">lorem</span> amet consectetur adipisicing elit. At similique dolorum unde atque dicta numquam quidem soluta! Sapiente eum <span class="c">lorem</span>  consequuntur fugiat molestias deserunt aliquam possimus, eligendi dolorum iusto magni ipsam!</p>
+    
+
+    <h2>Z-index property</h2>
+    <div class="demo1">demo1</div>
+    <div class="demo2">demo2</div>
+    <div class="demo3">demo3</div>
+    <div class="demo4">demo4</div>
+</body>
+</html>

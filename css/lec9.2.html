@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        P::first-line{
+            /* color:red; */
+            /* font-variant: small-caps; */
+            /* font-variant: normal; */
+            /* background-color: aqua; */
+            /* word-spacing: 15px; */
+            /* letter-spacing: 10px; */
+            /* text-decoration: underline 2px dotted red; */
+            /* vertical-align:sub; */
+            /* text-transform: capitalize;  */
+            /* text-transform: uppercase;  */
+            /* text-transform: lowercase;   */
+            /* line-height: 100px; */
+            /* font-size: xx-large; */
+        }
+        p.lorem::first-letter{
+            color: red;
+            font-size: 50px;
+        }
+        p::first-letter{
+            color: red;
+        }
+        p::first-line{
+            color: red;
+        }
+        h2::after{
+            content: url('/image3.jpg');
+        }
+        h2::before{
+            content: url('/image3.jpg');
+        }
+        ::marker{
+            color: red;
+        }
+        ::selection{
+            color: white;
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda optio, eum aperiam facere totam non sunt laboriosam sed, alias dolorem minus voluptatibus natus porro! Animi dignissimos optio quidem cupiditate perspiciatis!</p>
+    <p class="lorem">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, aliquid.</p>
+
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, natus.</h2>
+
+    <ul>
+        <li>ronit</li>
+        <li>prince</li>
+    </ul>
+    <ol>
+        <li>ronit</li>
+        <li>prince</li>
+    </ol>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi repudiandae ratione, molestiae ducimus hic dolorem praesentium aspernatur, magnam cupiditate rem explicabo! Magni enim delectus harum culpa officia cumque quisquam aperiam.</p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            padding: 12px;
+        }
+        section{
+            display: flex;
+        }
+        nav{
+            background-color: aqua;
+            padding: 20px;
+            flex: 1;
+            height: 500px;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+        }
+        article{
+            background-color: brown;
+            color: white;
+            /* padding: 20px; */
+            flex: 3;
+            height: 500px;
+            overflow: auto;
+        }
+        h2{
+            background-color: yellow;
+            color: red;
+            padding: 8px;
+            text-align: center;
+            }
+            p{
+                height: 300px;
+                padding: 12px;
+                background-color: #333;
+            }
+        footer{
+            background-color: yellowgreen;
+            color: red;
+            padding: 12px;
+            text-align: center;
+        }
+        @media (max-width:600px){
+            section{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2>Flexbox Layout</h2> -->
+    <header>Abcoding</header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2 id="home">Home</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam delectus exercitationem eius necessitatibus nisi non? Animi labore nostrum numquam reiciendis esse, repudiandae quisquam, sapiente voluptatem voluptas, reprehenderit dolore nihil magnam?</p>
+            <h2 id="contact">Contact</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam delectus exercitationem eius necessitatibus nisi non? Animi labore nostrum numquam reiciendis esse, repudiandae quisquam, sapiente voluptatem voluptas, reprehenderit dolore nihil magnam?</p>
+            <h2 id="gallery">Gallery</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam delectus exercitationem eius necessitatibus nisi non? Animi labore nostrum numquam reiciendis esse, repudiandae quisquam, sapiente voluptatem voluptas, reprehenderit dolore nihil magnam?</p>
+        </article>
+    </section>
+    <footer>abcoding@gmail.com</footer>
+</body>
+</html>

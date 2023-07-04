@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            float: left;
+            padding: 12px;
+        } */
+        #div1{
+            background-color: aqua;
+        }
+        .back{
+            background-image: url("/image3.jpg");
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            background-size: cover;
+            border: 2px solid black;
+        }
+        .transparencybox{
+            margin: 30px;
+            background-color: #ffffff75;
+            border: 2px solid black;
+            /* opacity: 0.6; */
+        }
+        .transparencybox p{
+            margin: 5%;
+            font-weight: bold;
+            color: red;
+        }
+        .container{
+            background-color: aliceblue;
+            margin: 50px;
+            padding: 15px;
+            border: 2px solid black;
+            height: 500px;
+
+            display: flex;
+            /* align-items: stretch; */
+            align-items: flex-end;
+            /* align-items: flex-start; */
+            /* justify-content: center; */
+            /* align-items: end; */
+
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* justify-content: center; */
+            /* align-items: flex-start; */
+            /* align-items: center; */
+
+        }
+        .div11{
+            background-color: aqua;
+        }
+        .div12{
+            background-color: rgb(0, 255, 17);
+            height: 150px;
+            font-size: 20px;
+        }
+        .div13{
+            background-color: rgb(207, 103, 19);
+        }
+        .div14{
+            background-color: rgb(139, 10, 10);
+        }
+        .itme{
+            padding: 10px;
+            /* margin-left: 10px; */
+        }
+
+        .left{
+            background-color: aqua;
+            border: 1px solid black;
+            width: 400px;
+            float: left;
+        }
+        .right{
+            background-color: rgb(255, 0, 204);
+            border: 1px solid black;
+            width: 400px;
+            float: right;
+        }
+        .both{
+            background-color: rgb(195, 255, 0);
+            border: 1px solid black;
+            /* clear: right; */
+            /* clear: left; */
+            clear: both;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <h2>overflow</h2>
+    <pre>
+        visible hidden scroll auto 
+        overflow-x 
+        overflow-y 
+    </pre>
+    <div class="div1" id="div1"> div1 </div>
+    <div class="div1" id="div2">div2</div>
+    <div class="div1" id="div3">div3</div>
+    <div class="div1" id="div4">div4</div>
+    <div class="div1" id="div5">div5</div>
+
+    <h2>Opacity / transparency</h2>
+
+    <div class="back">
+        <div class="transparencybox">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maiores, unde beatae obcaecati, architecto provident expedita facilis harum alias quos natus quod sequi eum laudantium? Recusandae cumque culpa ipsa temporibus.</p>
+        </div>
+    </div>
+
+    <h2>Align</h2>
+    <div class="container">
+        <div class="div11 itme">div1</div>
+        <div class="div12 itme">div2</div>
+        <div class="div13 itme">div3</div>
+        <div class="div14 itme">div4</div>
+
+    </div>
+
+    <h2>float and Clear</h2>
+
+    <div class="left">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quibusdam in corporis soluta, praesentium illum pariatur aliquam! Necessitatibus rerum quo cupiditate neque ratione, repellat illum beatae harum amet explicabo aspernatur.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, illo corporis ad dolorum inventore labore. Assumenda quas distinctio temporibus molestiae doloremque eum cupiditate adipisci mollitia, quisquam ipsa a quasi ipsum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur reprehenderit dolore quo, placeat voluptate repellendus, molestiae cum praesentium quas accusantium ad, est suscipit ratione harum perspiciatis saepe. Illum, eos?
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quibusdam in corporis soluta, praesentium illum pariatur aliquam! Necessitatibus rerum quo cupiditate neque ratione, repellat illum beatae harum amet explicabo aspernatur.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, illo corporis ad dolorum inventore labore. Assumenda quas distinctio temporibus molestiae doloremque eum cupiditate adipisci mollitia, quisquam ipsa a quasi ipsum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aspernatur reprehenderit dolore quo, placeat voluptate repellendus, molestiae cum praesentium quas accusantium ad, est suscipit ratione harum perspiciatis saepe. Illum, eos?
+    </div>
+    <div class="right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos itaque aperiam fuga quas eos eveniet aut, maxime deserunt recusandae Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero veritatis, enim optio odio, adipisci obcaecati ducimus ipsam in non autem quas officia a deleniti! Laborum ipsum quod recusandae eveniet ut. error quos ducimus aliquid, impedit exercitationem. Itaque dicta aperiam esse amet!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente eligendi quisquam, molestias officia explicabo numquam laborum? Accusantium laudantium totam fuga placeat debitis harum ea neque, velit temporibus maxime optio? Numquam ratione pariatur magni, ipsam esse perspiciatis laborum aut eum, nisi quo atque distinctio unde ipsum ad iure eaque facilis corrupti quae aliquam culpa dicta. Natus, quae. Eveniet nobis repellat adipisci consectetur! Expedita eos in, fugiat et dolor itaque ab veniam corporis quis accusamus aliquid nam magnam. Quos modi repellendus, corrupti vitae nisi hic fugiat? Inventore a nemo nihil? Fuga cumque sint quidem totam est nobis officiis optio voluptatibus beatae consectetur.
+    </div>
+    <div class="both">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab corrupti quos iste perspiciatis itaque consequuntur blanditiis delectus, expedita vitae, suscipit Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quisquam laboriosam assumenda ipsum dolores unde eius hic voluptates quasi quo, commodi atque debitis voluptate quia ut similique quas tempora? Quo! dicta atque beatae eius. Porro animi voluptas nobis nesciunt omnis!
+    </div>
+</body>
+</html>

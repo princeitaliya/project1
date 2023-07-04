@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Output</title>
+  </head>
+  <body>
+    <h2>javascript Output</h2>
+    <pre>
+        innerHTML
+        document.write()
+        window.alert()
+        console.log()
+    </pre>
+
+    <p id="test"></p>
+    <button onclick="myfun()">submit</button>
+
+    <button type="button" onclick="document.write(5+10)">click</button>
+
+    <button type="button" onclick="window.print()">click print</button>
+    <script>
+      // document.getElementById("test").innerHTML = "hello abcoding";
+      function myfun() {
+        alert("hii");
+        console.log("hiiii");
+        document.getElementById("test").innerHTML = "hello ";
+      }
+      document.write("hello11111111111111111111111111111111");
+      // alert("hiiiii");
+    </script>
+
+    <h2>Variables</h2>
+    <pre>
+        automatically
+        var
+        let 
+        const 
+    </pre>
+    <p id="variables"></p>
+    <script>
+      // x = 5 +10 ;
+      // y = 10;
+      // z = x +y ;
+      // console.log(z);
+      // alert(z);
+      // document.getElementById("variables").innerHTML= z;
+
+    //   var Bhavi_G2;
+      var a = 10;
+    //    a = 50;
+
+    let x = 10;
+      //  {
+      //   var a =  100;
+      //   console.log( "block var " + a);
+      //  }
+      //  console.log("var " + a);
+
+      //  {
+      //   let x = 100;
+      //   console.log("block " + x);
+      //  }
+      //  console.log("let " + x);
+
+    // let a = 10
+    //  a = 50
+        // console.log(a);
+    //   var a, b, c, d,r,f,f;
+    //     var x = 10, c= 51,s="vaibhav";
+    //   a = "abcoding";
+    //   b = 25;
+    // console.log(a + " " + b  + " " + x  + " " + c  + " " + s);
+
+    //   Bhavi_G2 = 5;
+    //   y = 10;
+
+    //   z = Bhavi_G2 + y;
+    //   alert(z);
+
+    const c = 50;
+    //  c = 20;
+    console.log(c);
+        // array
+    const x1 = ["nishank","bhavin","hardik"];
+    x1[0]= "prince";
+    //add
+    x1.push("vaibhav");
+    // document.getElementById("test").innerHTML = x1;
+        // object
+    let x2 = {color: "red",bhavin:"godhani",prince:"abcd"}
+        x2.bhavin = "hardik";
+        // add
+        x2.vaibhav = "savaliya"
+    document.getElementById("test").innerHTML = x2.bhavin + ' ' + x2['color'] + " " + x2.vaibhav;
+
+    </script>
+
+
+  </body>
+</html>

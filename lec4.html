@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            width:100%;
+        }
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            text-align: center;
+        }
+        th{
+            /* text-align: left; */
+            /* background-color: black; */
+            /* color: white; */
+        }
+        td,th{
+            padding: 12px;
+            /* padding-top: 15px; */
+            /* padding-left: 30px; */
+        }
+        tr:nth-child(even){
+            /* background-color: aquamarine; */
+        }
+        tr:nth-child(even),th:nth-child(even){
+            /* background-color: aquamarine; */
+        }
+        tr:hover{
+            /* background-color: blueviolet; */
+        }
+        td:hover{
+            /* background-color: red; */
+        }
+        
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>class TAble</caption>
+        <colgroup>
+            <col span="2" style="background-color: brown;">
+            <col span="1">
+            <col span="2" style="background-color: yellow;">
+        </colgroup>
+        <tr>
+            <th>No</th>
+            <th colspan="2">Name</th>
+            <!-- <th>Email</th> -->
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td rowspan="2">prince</td>
+            <td>demo@gmail.com</td>
+            <td>1235697652</td>
+            <td>surat</td>
+            <td><a href="https://www.flipkart.com/">flipkart</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <!-- <td>prince</td> -->
+            <td>demo@gmail.com</td>
+            <td>1235697652</td>
+            <td>surat</td>
+            <td><a href="https://www.flipkart.com/">flipkart</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>prince</td>
+            <td>demo@gmail.com</td>
+            <td>1235697652</td>
+            <td>surat</td>
+            <td><a href="https://www.flipkart.com/">flipkart</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>prince</td>
+            <td>demo@gmail.com</td>
+            <td>1235697652</td>
+            <td>surat</td>
+            <td><a href="https://www.flipkart.com/">flipkart</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>prince</td>
+            <td>demo@gmail.com</td>
+            <td colspan="2">1235697652</td>
+            <!-- <td>surat</td> -->
+            <td><a href="https://www.flipkart.com/">flipkart</a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>prince</td>
+            <td>demo@gmail.com</td>
+            <td>1235697652</td>
+            <td>surat</td>
+            <td><a href="https://www.flipkart.com/">flipkart</a></td>
+        </tr>
+    </table>
+
+    <h2>lists</h2>
+
+    <h2>Umordered list and ordered list</h2>
+    <pre>
+        ol type => 1, A, a,i,I
+        ul type => disc, circle, square, none
+    </pre>
+    <ol type="1" start="50">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>water</li>
+    </ol>
+
+    <ul style="list-style-type: circle;">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>water</li>
+    </ul>
+
+    <h2>Discription lists</h2>
+    <dl>
+        <dt>name</dt>
+        <dd>-first and last name</dd>
+        <dt>coffee</dt>
+        <dd>- black and  hot drink</dd>
+    </dl>
+</body>
+</html>

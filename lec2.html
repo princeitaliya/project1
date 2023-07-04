@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Colors</title>
+    <style>
+        *{ /* Universal selector*/
+            margin: 0;
+            padding: 0;
+        }
+        p{ /*  selector*/
+            /* background-color: red; */
+        }
+        .test{  /* class selector*/
+            background-color: red;
+            font-size: 30px;
+            color: white;
+        }
+        #demo{
+            background-color: aqua;
+            color: red;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #main{  /* ID selector*/
+            /* background-color: blue; */
+        }
+        h2{
+            color: blue;
+        }
+        #main h2{ /* grouping selector*/
+            color: red;          
+        }
+        #main p{
+            color: yellow;
+        }
+        #main .lec2{  
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>RGB Color</h2>
+    <pre>
+        rgb => red, green, blue   rgba => alpha
+        rgb(0,0,0) => black
+        rgb(255,255,255) => white
+        alpha 0.0 full transpartent   and 1.0 not transpartent
+    </pre>
+    <p style="color: rgb(200, 100, 50);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi impedit neque amet quam nisi. Consequatur alias minus numquam sit, sequi, eos quibusdam dolores voluptatum saepe quidem enim itaque magnam iusto.</p>
+    <h2>HEX Color</h2>
+    <pre>
+        #rrggbb 
+        #000000 =>black
+        #ffffff =>white
+    </pre>
+    <p style="color: #54218715;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet explicabo maiores at maxime, et quos ullam sapiente, laborum cupiditate nobis repellendus autem dignissimos eligendi amet unde velit obcaecati placeat deserunt?</p>
+    <h2>HSL color</h2>
+    <pre>
+        H => hue degree  0 to 360 . 0 is red, 120 is green, 240 is blue.
+        S = saturation 0% gray and 100% full color.
+        L => lightness 0% black and 100% white.
+    </pre>
+    <p style="color: hsla(180, 51%, 80%, 0.836);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad repellendus neque sed perferendis aliquam ullam ex. Eveniet fugiat dolor minus suscipit nobis, mollitia amet expedita quam itaque autem nemo officia?</p>
+
+    <h1>How to add CSS</h1>
+    <pre>
+        External CSS
+        Internal CSS
+        Inline CSS
+    </pre>
+
+    <h2>inline css</h2>
+    <p style="background-color: aqua; color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores mollitia sequi, cupiditate et, laboriosam eaque vero ipsam sit ipsa sint libero perferendis error? Ad, reprehenderit consectetur. Esse neque doloremque dicta.</p>
+
+    <p class="test" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quos possimus perferendis! Tenetur eos nobis magnam cumque adipisci? Nulla, voluptatum neque? Eum magni laboriosam fuga voluptate? Expedita ex magni earum.</p>
+    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, qui?</p>
+
+    <p id="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus libero fuga repellat a illo labore minima ad aperiam exercitationem aliquam, qui aspernatur possimus maxime autem mollitia impedit. Quibusdam, minima iure.</p>
+    <p class="test">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nihil!</p>
+    <div id="main">
+        <h2>internal css</h2>
+        <p class="lec2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste perspiciatis aut harum culpa cupiditate, exercitationem ducimus sed illo laborum. Veritatis possimus totam atque recusandae iusto, labore sapiente fugit. Qui, est!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, mollitia?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos explicabo earum voluptates debitis rerum blanditiis omnis iure asperiores repellat, sequi quam quisquam, assumenda harum deleniti animi nisi, dolor dicta rem!</p>
+    </div>
+    <h2>lorem</h2>
+
+
+    <h2 style="background-color: white;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, perferendis?</h2>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        div p{
+            /* color: red; */
+        }
+        div > p{
+            /* color:yellow; */
+        }
+        div + p{
+            /* color: red; */
+        }
+        div ~ p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>css Combinators</h2>
+    <h5>descendant selector</h5>
+    <!-- <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nihil.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nihil.</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptate?</p>
+        </section>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, debitis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, debitis.</p> -->
+
+    <!-- <h5>child Selector (>)</h5>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nihil.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nihil.</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptate?</p>
+        </section>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, perferendis!</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, debitis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, debitis.</p> -->
+
+    <!-- <h5>adjacent sibling Selector (+)</h5>
+    <div>
+        <p>Lorem ipsum dolor sit amet 1.</p>
+        <p>Lorem ipsum dolor sit amet 2.</p>
+    </div> 
+    <p>Lorem ipsum dolor sit amet 3.</p>
+    <p>Lorem ipsum dolor sit amet 4.</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet 5.</p>
+        <p>Lorem ipsum dolor sit amet 6.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet 7.</p>
+    <p>Lorem ipsum dolor sit amet 8.</p> -->
+
+    <h5>general sibling Selector (~)</h5>
+    <p>Lorem ipsum dolor sit amet. 1</p>
+    <p>Lorem ipsum dolor sit amet. 1</p>
+    <p>Lorem ipsum dolor sit amet. 1</p>
+    <p>Lorem ipsum dolor sit amet. 1</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet. 2</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet. 3</p>
+    <span>Lorem ipsum dolor sit amet. 4</span>
+    <p>Lorem ipsum dolor sit amet. 5</p>
+    <p>Lorem ipsum dolor sit amet. 5</p>
+    <p>Lorem ipsum dolor sit amet. 5</p>
+    <p>Lorem ipsum dolor sit amet. 5</p>
+    <p>Lorem ipsum dolor sit amet. 5</p>
+</body>
+</html>

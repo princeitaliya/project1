@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .menus{
+            overflow: hidden;
+        }
+        #header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            padding: 10px;
+        }
+        .menu{
+            float: left;
+            width: 20%;
+            
+        }
+        .menu ul{
+            list-style: none;
+            background-color: aqua;
+            height: 500px;
+        }
+        .menu ul li a {
+            text-decoration: none;
+        }
+        .main{
+            float: left;
+            width: 60%;
+            background-color: blueviolet;
+            color: white;
+            height: 500px;
+            overflow: auto;
+
+        }
+        .main h2{
+            background-color: royalblue;
+            color: red;
+            padding: 8px;
+            text-align: center;
+        }
+        .main p {
+            height: 400px;
+            background-color: gray;
+            color: red;
+            padding: 12px;
+        }
+        .right{
+            background-color: chartreuse;
+            color: red;
+            height: 500px;
+            float: left;
+            width: 20%;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            padding: 12px;
+        }
+        /* .menus{
+            content: '';
+            display: table;
+            clear: both;
+        } */
+        @media only screen and (max-width:500px){
+            .main, .menu, .right{
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:800px){
+            .main{
+                width: 80%;
+            }
+            .right{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Abcoding</h1>
+       <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, illo!</h5>
+    </div>
+
+    <div class="menus">
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home1">Home1</a></li>
+                <li><a href="#home2">Home2</a></li>
+                <li><a href="">Home3</a></li>
+                <li><a href="">Home4</a></li>
+                <li><a href="">Home5</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2 id="home">Home</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae incidunt ad ratione sunt soluta ipsam earum qui. Natus tenetur quod blanditiis labore quas quam quae voluptatum magnam voluptas, fugiat debitis!</p>
+            <h2 id="home1">Home1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae incidunt ad ratione sunt soluta ipsam earum qui. Natus tenetur quod blanditiis labore quas quam quae voluptatum magnam voluptas, fugiat debitis!</p>
+            <h2>Home</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae incidunt ad ratione sunt soluta ipsam earum qui. Natus tenetur quod blanditiis labore quas quam quae voluptatum magnam voluptas, fugiat debitis!</p>
+            <h2>Home</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae incidunt ad ratione sunt soluta ipsam earum qui. Natus tenetur quod blanditiis labore quas quam quae voluptatum magnam voluptas, fugiat debitis!</p>
+        </div>
+        <div class="right">
+            <h2>hello Abcdoing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ratione aut unde corporis cum laborum molestias deleniti exercitationem. Quis molestias incidunt enim ut ipsa commodi facilis minus explicabo repellendus iure.</p>
+        </div>
+    </div>
+
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quidem enim laborum, dolor quis incidunt voluptate omnis necessitatibus ex mollitia, consectetur amet doloremque neque accusantium ipsa expedita perferendis repudiandae. Perspiciatis.
+    </div>
+
+    <footer>
+        Abcoding@gmail.com 
+    </footer>
+</body>
+</html>

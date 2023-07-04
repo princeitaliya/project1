@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script src="script.js"> </script>
+    <style>
+        .lorem{
+            /* background-color: red; */
+            /* color: white; */
+            margin: 10px 0px 50px 40px ;
+            /* margin-top: 50px; */
+            /* margin-right: 60px; */
+            /* margin-bottom: 20px; */
+            /* margin-left: 50px; */
+            padding: 50px 0px 50px 20px ;
+        }
+        h2{
+            background-color: black;
+            color: white;
+            padding: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus minima optio laboriosam, ut obcaecati eos assumenda earum incidunt laudantium quod maxime. Molestias qui quae laboriosam corporis repellat, consequuntur quam hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel reprehenderit amet adipisci earum quisquam necessitatibus! Laborum aspernatur mollitia illum et nihil voluptatum adipisci modi saepe exercitationem? Sed ullam molestias itaque.</p>
+
+    <p id="test">hello abcoding</p>
+    <p id="test1">hello prince</p>
+    <button onclick="myfnd()">Click Me</button>
+
+
+    <p id="lorem1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, veniam. Pariatur dolorum id tenetur, perferendis architecto rerum mollitia suscipit sint! Id modi natus quo sed laborum atque voluptas nobis odit.</p>
+    <button onclick="abc()">submit</button>
+
+    <p id="remove">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium eos dolor est dolores, molestiae laudantium non reprehenderit enim rem. Ad quam fuga temporibus error impedit, facere ratione eius similique ipsam.</p>
+    <button onclick="remove()">show</button>
+    <button onclick="show()">hide</button>
+
+    <h2 class="demo">home</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore repellat illo porro adipisci praesentium asperiores placeat maxime enim, et, itaque aut corporis harum reprehenderit nostrum inventore velit architecto doloremque?</p>
+    <h2 class="demo">About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore repellat illo porro adipisci praesentium asperiores placeat maxime enim, et, itaque aut corporis harum reprehenderit nostrum inventore velit architecto doloremque?</p>
+    <h2 class="demo">Contact</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolore repellat illo porro adipisci praesentium asperiores placeat maxime enim, et, itaque aut corporis harum reprehenderit nostrum inventore velit architecto doloremque?</p>
+    <button onclick="all_remove()">all remove</button>
+    
+    <script>
+function all_remove(){
+    // document.getElementById("demo").style.display = " none";
+    var x = document.getElementsByClassName("demo").value;
+    // var z = x.length;
+
+    for(var i = 0; i < x.length; i++){
+        x[i].style.display = "none";
+    }
+
+}
+
+    //    function remove(){
+    //     document.getElementById("remove").style.display = " block";
+    //    }
+    //    function show(){
+    //     document.getElementById("remove").style.display = "none";
+    //    }
+
+    </script>
+      <script src="script.js"> </script>
+</body>
+</html>

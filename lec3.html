@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/image3.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a:link {
+        color: black;
+      }
+      a:visited {
+        color: aqua;
+        /* text-decoration: none; */
+      }
+      a:hover {
+        color: black;
+        text-decoration: none;
+      }
+      .hey:active {
+        color: blue;
+      }
+      .tiii a:hover {
+        color: red;
+      }
+      h5 {
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        padding: 12px;
+      }
+      p {
+        background-color: aquamarine;
+        color: red;
+        height: 100px;
+        text-align: justify;
+      }
+      .lorem{
+        /* border: 2px solid red; */
+        /* border-style: solid;
+        border-width: 5px;
+        border-color: blue;
+        border-radius: 10px; */
+        border-top: 3px solid red;
+        border-bottom: 2px dotted blue;
+        border-left: 5px double yellow;
+        border-right: 10px groove darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>link Hyperlinks target attributes</h2>
+    <pre>
+        _self
+        _blank
+        _parent
+        _top
+    </pre>
+    <a href="https://www.flipkart.com/" target="_blank">flipkart</a>
+    <a href="https://www.flipkart.com/" target="_self">flipkart</a>
+
+    <h2>absolute URL</h2>
+    <a href="https://www.flipkart.com/" target="_self">flipkart</a>
+    <h2>Relative Url</h2>
+    <a href="note.html">note</a>
+    <h2>link use an image as a link</h2>
+    <a href="lec1.html" target="_blank"
+      ><img src="image3.jpg" alt="image" width="200" height="200"
+    /></a>
+    <br />
+    <a href="https://www.flipkart.com/" title="flipkart">FL</a>
+
+    <h1>link color</h1>
+    <div class="tiii">
+      <a href="https://www.flipkart.com/">flipkart red</a>
+    </div>
+    <a href="https://www.flipkart.com/" class="hey">flipkart</a>
+
+    <h2>create bookmark</h2>
+    <a href="#l2">lecture 2</a>
+    <a href="#l4">lecture 4</a>
+    <a href="#l8">lecture 8</a>
+    <a href="#l10">lecture 10</a>
+
+    <h5 id="l1">lecture 1</h5>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ex
+      ducimus alias dignissimos ea explicabo est inventore? Debitis, officiis
+      perferendis dolorum distinctio veniam molestiae unde voluptatem temporibus
+      voluptates mollitia reprehenderit.
+    </p>
+    <h5 id="l2">lecture 2</h5>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ex
+      ducimus alias dignissimos ea explicabo est inventore? Debitis, officiis
+      perferendis dolorum distinctio veniam molestiae unde voluptatem temporibus
+      voluptates mollitia reprehenderit.
+    </p>
+    <h5 id="l4">lecture 4</h5>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ex
+      ducimus alias dignissimos ea explicabo est inventore? Debitis, officiis
+      perferendis dolorum distinctio veniam molestiae unde voluptatem temporibus
+      voluptates mollitia reprehenderit.
+    </p>
+    <h5 id="l6">lecture 6</h5>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ex
+      ducimus alias dignissimos ea explicabo est inventore? Debitis, officiis
+      perferendis dolorum distinctio veniam molestiae unde voluptatem temporibus
+      voluptates mollitia reprehenderit.
+    </p>
+    <h5 id="l8">lecture 8</h5>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ex
+      ducimus alias dignissimos ea explicabo est inventore? Debitis, officiis
+      perferendis dolorum distinctio veniam molestiae unde voluptatem temporibus
+      voluptates mollitia reprehenderit.
+    </p>
+    <h5 id="l10">lecture 10</h5>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate ex
+      ducimus alias dignissimos ea explicabo est inventore? Debitis, officiis
+      perferendis dolorum distinctio veniam molestiae unde voluptatem temporibus
+      voluptates mollitia reprehenderit.
+    </p>
+
+    <h2>Image</h2>
+    <img src="img/img1.jpg" alt="background-image" width="300" height="200" >
+    <h2>link image</h2>
+    <a href="note.html" target="_blank"><img src="img/img1.jpg" alt="image"></a>
+    <h2>background-image</h2>
+    <h2>Favicon</h2>
+
+    <h2>Borders</h2>
+    <pre>
+        dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden 
+    </pre>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a rerum delectus illo recusandae sapiente in deserunt minima assumenda corporis, tempora cum dolores at perferendis fugiat consequatur! At, veniam similique.</p>
+  </body>
+</html>

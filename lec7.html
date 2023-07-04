@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leyout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-size: 22px;
+        }
+        nav{
+            background-color: aqua;
+            float: left;
+            padding: 20px;
+            width: 30%;
+            height: 300px;
+        }
+        nav ul{
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: red;
+        }
+        h1{
+            background-color: red;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+        p{
+            height: 150px;
+        }
+        article{
+            background-color: blue;
+            color: white;
+            height: 300px;
+            padding: 20px;
+            overflow: auto;
+        }
+        footer{
+            background-color: aquamarine;
+            text-align: center;
+            padding: 12px;
+            font-size: 22px;
+        }
+        
+        @media (max-width:600px){
+            nav{
+                width: 100%;
+                height: auto;
+                background-color: red;
+            }
+            article{
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (max-width:400px){
+            nav,article{
+                width: 100%;
+                height: auto;
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2>HTML leyout</h2>
+    <pre>
+        Float Property
+        Flexbox
+        Grid
+    </pre>
+    <h2>float Layout</h2> -->
+
+    <header>
+        Abcoding It Institute
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1 id="home">Home</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates earum enim repellendus ducimus quam dolorum at libero vel sapiente temporibus! Voluptatem ducimus officia praesentium culpa fuga. Eum nemo nisi placeat!</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates earum enim repellendus ducimus quam dolorum at libero vel sapiente temporibus! Voluptatem ducimus officia praesentium culpa fuga. Eum nemo nisi placeat!</p>
+
+            <h1 id="contact">Contact</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates earum enim repellendus ducimus quam dolorum at libero vel sapiente temporibus! Voluptatem ducimus officia praesentium culpa fuga. Eum nemo nisi placeat!</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates earum enim repellendus ducimus quam dolorum at libero vel sapiente temporibus! Voluptatem ducimus officia praesentium culpa fuga. Eum nemo nisi placeat!</p>
+
+            <h1 id="gallery">Gallery</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates earum enim repellendus ducimus quam dolorum at libero vel sapiente temporibus! Voluptatem ducimus officia praesentium culpa fuga. Eum nemo nisi placeat!</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates earum enim repellendus ducimus quam dolorum at libero vel sapiente temporibus! Voluptatem ducimus officia praesentium culpa fuga. Eum nemo nisi placeat!</p>
+
+            <h1 id="about">About</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates earum enim repellendus ducimus quam dolorum at libero vel sapiente temporibus! Voluptatem ducimus officia praesentium culpa fuga. Eum nemo nisi placeat!</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates earum enim repellendus ducimus quam dolorum at libero vel sapiente temporibus! Voluptatem ducimus officia praesentium culpa fuga. Eum nemo nisi placeat!</p>
+
+        </article>
+    </section>
+
+    <footer>
+        Abcoding Footer
+    </footer>
+</body>
+</html>

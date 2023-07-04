@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Querirs</title>
+    <style>
+        .box{
+            background-color: #cccccc;
+            color: red;
+            padding: 12px;
+            font-size: 25px;
+             display: none; 
+        }
+        #box3{
+            background-color: aquamarine;
+            border: 1px solid black;
+            min-width: 300px;
+            height: 200px;
+            text-align: justify;
+        }
+        @media (max-width:300px){
+            #box1{
+                background-color: aqua;
+                color: blue;
+                display: block;
+            }
+            #box3{
+                background-color: red;
+                color: white;
+                display: block;
+            }
+        }
+        @media screen and (min-width:300px) and (max-width:500px){
+            #box2{
+                background-color: green;
+                display: block;
+            }
+        }
+        @media screen and (min-width:800px) and (max-width:1024px){
+            #box1{
+                background-color: aqua;
+                color: blue;
+                display: block;
+            }
+            #box3{
+                background-color: red;
+                color: white;
+                display: block;
+            }
+            #box2{
+                background-color: green;
+                display: block;
+            }
+            #box4{
+                background-color: rgb(18, 142, 167);
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Media Querirs type</h2>
+    <pre>
+        all 
+        print
+        screen
+        speech
+        1920 
+    </pre>
+    <div class="box" id="box1">
+        Lorem ipsum dolor sit amet. 1
+    </div>
+    <div class="box" id="box2">
+        Lorem ipsum dolor sit amet. 2
+    </div>
+    <div class="box" id="box3">
+        Lorem ipsum dolor sit amet. 3
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti assumenda in, at veniam labore error quisquam laudantium, dicta quas, ipsum magni voluptas perspiciatis quo. Cumque rem tenetur non aliquam facere?
+        lorem100
+    </div>
+    <div class="box" id="box4">
+        Lorem ipsum dolor sit amet. 4
+    </div>
+</body>
+</html>

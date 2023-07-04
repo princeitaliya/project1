@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .gallery_main{
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .responsive{
+            float: left;
+            /* display: flex; */
+            justify-content: center;
+            padding: 0 5px;
+            width: 25%;
+        }
+        .gallery{
+            border: 1px solid #cccccc;
+        }
+        .gallery:hover{
+            border: 2px solid black;
+        }
+        .gallery img{
+            width: 100%;
+            height: auto;
+        }
+        .desc{
+            padding: 10px;
+            text-align: center;
+            color: red;
+        }
+        /* .clear{
+            content: '';
+            display: table;
+            clear: both;
+        } */
+        @media only screen and (max-width:700px) {
+            .gallery_main .responsive{
+                /* flex-direction: column; */
+                width: 50%;
+                padding: 12px;
+            }
+        }
+        @media only screen and (max-width:400px) {
+            .gallery_main .responsive{
+                /* flex-direction: column; */
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery_main">
+        <div class="responsive">
+            <div class="gallery">
+                <a href="/img/img1.jpg" title="images" target="_blank">
+                    <img src="/img/img1.jpg" alt="images">
+                </a>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a href="/img/img1.jpg" title="images" target="_blank">
+                    <img src="/img/img1.jpg" alt="images">
+                </a>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a href="/img/img1.jpg" title="images" target="_blank">
+                    <img src="/img/img1.jpg" alt="images">
+                </a>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a href="/img/img1.jpg" title="images" target="_blank">
+                    <img src="/img/img1.jpg" alt="images">
+                </a>
+                <div class="desc">
+                    Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="clear">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus optio labore amet laborum illo magnam praesentium ipsum est recusandae, fugiat odio quos numquam nemo. Fugiat, id alias? Provident est ipsum nisi culpa! Dolores magnam error cum distinctio voluptatibus expedita nihil illo, omnis amet quos doloremque, aspernatur rem quaerat ducimus? Hic quos placeat aperiam recusandae aspernatur veritatis dolorum? Dolor ratione fugiat ipsa magni omnis itaque ipsam vel earum, unde corporis sed explicabo facilis beatae quae in eos officia quasi soluta deserunt nostrum eveniet quibusdam ea, ad a? Facilis id iste accusamus non ea, fugiat dolorem, sit porro reiciendis unde nulla quidem!
+    </div> -->
+</body>
+</html>

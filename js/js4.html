@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>logical operator</h2>
+    <p id="test"></p>
+    <script>
+      let a = 10;
+      let b = 20;
+      let c = a > b && a < 5;
+      document.getElementById("test").innerHTML =
+        " this value is " + (a < b && a > 5);
+      // document.getElementById("test").innerHTML = " this value is " + (a > b ||  a > 5);
+      // document.getElementById("test").innerHTML = " this value is " + (a != b);
+    </script>
+
+    <h2>if conditional</h2>
+    <p id="if"></p>
+    <script>
+      // if statemnet
+      // let x = 10;
+      let x = "hello";
+      // let y = prompt("please enter your age");
+      let z = new Date().getDate();
+      console.log(z);
+      // alert(y);
+      // if( y > 18 && y < 30 ){
+      //                 document.getElementById("if").innerHTML = "your age is " + y ;
+      // }
+
+      // if( y > 18 || y < 30 ){
+      //                 document.getElementById("if").innerHTML = "your age is " + y ;
+      // }
+      // if(z < 30){
+      //     alert("dj skjdfms ,jusf jov " + z );
+      // }
+      // if(x == "hardik"){
+      //     document.getElementById("if").innerHTML = "hello abcoding " + x ;
+      // }
+      // if(x !== "abc"){
+      //     document.getElementById("if").innerHTML = "hello abcoding " + x ;
+      // }
+    </script>
+
+    <h2>eles statemnet</h2>
+    <p id="eles"></p>
+    <input type="text" id="num" />
+    <button onclick="newfun()">click</button>
+    <script>
+      // let x1 = 1001;
+      // let x1 = prompt("please ente your number");
+      // let x1 = document.getElementById("num").value;
+      // console.log(x1);
+      // let x2 = '';
+      // if (x1 >= 1 && x1 <= 100){
+      //     x2 = "good";
+      // }else{
+      //     x2 = "bed";
+      // }
+      // document.getElementById("eles").innerHTML = "hello abcoding " + x2;
+
+      function newfun() {
+        let x1 = document.getElementById("num").value;
+        console.log(x1);
+        let x2 = "";
+        if (x1 >= 91 && x1 <= 100) {
+          x2 = "A+";
+        } else{
+            x2 = "not found";
+        }
+        document.getElementById("eles").innerHTML = "hello abcoding " + x2;
+      }
+
+      function newfun() {
+        // let x1 = document.getElementById("num").value;
+        let x1 = 50;
+        console.log(x1);
+        let x2 = "";
+        if (x1 >= 91 && x1 <= 100) {
+          x2 = "A+";
+        } else if(x1 >= 81 && x1 <=90){
+          x2 = "B+";
+        } else if (x1 >= 0 && x1 <=33){
+            x2 = "bed";
+        }else{
+            x2 = "not found";
+        }
+        document.getElementById("eles").innerHTML = "hello abcoding " + x2;
+      }
+
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <style>
+        a[target]{
+            color: red;
+        }
+        a[target="_blank"]{
+            color: aqua;
+        }
+        [title~="imgs"]{
+            border: 5px solid red;
+        }
+        [class|="big"]{
+            background-color: aqua;
+        }
+        [class^="big"]{
+            background-color: red;
+        }
+        [class$="small"]{
+            background-color: blueviolet;
+        }
+        [class*="s"]{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="/lec1.html">lecture1</a> 
+    <a href="/lec1.html" target="_blank">lecture1</a> 
+    <a href="/lec1.html" target="_top">lecture1</a> 
+
+
+   <img src="/image3.jpg" title="images imgs" alt="images" width="100" height="100">
+   <img src="/image3.jpg" title="imgs" alt="images" width="100" height="100">
+   <img src="/image3.jpg" title="imgs1" alt="images" width="100" height="100">
+
+   <h2 class="big-head">abcoding</h2>
+   <h2 class="big-text">hello abcoding</h2>
+   <h2 class="bigsmall">hey abcoding sss</h2>
+   <h2 class="big-small">hey abcoding sssss</h2>
+
+   <h2 class="headbig">abcoding</h2>
+   <h2 class="bicgbigtext">hello abcoding</h2>
+   <h2 class="bigsmall">hey abcoding</h2>
+   <h2 class="big-small">hey abcoding</h2>
+
+   <h2 class="big-headsmall">abcoding</h2>
+   <h2 class="big-text-small">hello abcoding</h2>
+   <h2 class="bigsall">hey abcoding</h2>
+   <h2 class="smaillbig">hey abcoding</h2>
+
+
+   <h2 class="big-head">abcoding</h2>
+   <h2 class="big-text">hello abcoding</h2>
+   <h2 class="bigsmall">hey abcoding</h2>
+   <h2 class="big-small">hey abcoding</h2>
+</body>
+</html>

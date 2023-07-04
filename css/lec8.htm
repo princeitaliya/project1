@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* background-image: url(/image3.jpg); */
+        }
+        div{
+            background-color: #cccccc;
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 5px;
+            /* opacity: 0.5; */
+           
+        }
+        input[type=text],select{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: greenyellow;
+            color: red;
+            padding: 12px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            font-size: 25px;
+        }
+        input[type=text]:focus{
+            background-color: red;
+            border: 2px solid black;
+            color: white;
+        }
+        input[type=submit]:hover{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <label for="fname">First name</label>
+            <input type="text" name="f_name" id="fname" placeholder="plaese your name " required>
+    
+            <label for="lname">Last name</label>
+            <input type="text" name="l_name" id="lname" placeholder="plaese your name " required>
+    
+            <label for="country">Country</label>
+            <select name="city" id="country">
+                <option value="">Choose a city</option>
+                <option value="Surat">Surat</option>
+                <option value="bhavnagar">BHavnagar</option>
+                <option value="rajkot">Rajkot</option>
+                <option value="vapi">Vapi</option>
+            </select>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+</html>

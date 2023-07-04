@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css pseudo classes</title>
+    <style>
+        a.hello{
+            color: red;
+            font-size: 25px;
+        }
+
+        /* div{
+            background-color: aqua;
+            color: red;
+            padding: 10px;
+            text-align: center;
+        }
+        div:hover{
+            background-color: blue;
+        } */
+
+        /* p{
+            background-color: aqua;
+            text-align: center;
+            padding: 10px;
+            color: red;
+            display: none;
+        }
+        div:hover p{
+            display: block;
+        } */
+
+        p:first-child{
+            /* color: aqua; */
+        }
+        p i:first-child{
+            /* color: red; */
+        }
+        p:first-child i{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pseudo -classes</h2>
+
+    <p><a href="lec1.html" class="hello"> lecture 1</a></p>
+    <p><a href="lec1.html"> lecture 2</a></p>
+
+    <h2>hover on div </h2>
+    <div> hover me</div>
+
+    <h2>simple tooltip hover</h2>
+    <div>Lorem ipsum dolor sit amet.
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic distinctio nihil, laboriosam deleniti cupiditate dolor laudantium ullam obcaecati eos veniam. Dicta illo cum rerum eius consequatur quaerat hic, amet id!</p>
+    </div>
+
+    <h2>first-child pseudo class</h2>
+    <p>Lorem ipsum dolor sit amet.1</p>
+    <p>Lorem ipsum dolor sit amet.2</p>
+    <p>Lorem ipsum dolor sit amet.3</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet. 4</p>
+        <p>Lorem ipsum dolor sit amet. 5</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet. 6</p>
+        <p>Lorem ipsum dolor sit amet. 7</p>
+    </div>
+
+    <h2>first i element in all p element</h2>
+
+    <p>Lorem, ipsum. <i>lorem</i> Lorem ipsum dolor sit. <i>lorem</i> Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum. <i>lorem</i> Lorem ipsum dolor sit. <i>lorem</i> Lorem, ipsum dolor.</p>
+
+    <h2>match all i element in all first child  p element</h2>
+
+    <p>Lorem, ipsum. <i>lorem</i> Lorem ipsum dolor sit. <i>lorem</i> Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum. <i>lorem</i> Lorem ipsum dolor sit. <i>lorem</i> Lorem, ipsum dolor.</p>
+    <div>
+        <p>Lorem, ipsum. <i>lorem</i> Lorem ipsum dolor sit. <i>lorem</i> Lorem,  <i>lorem</i> Lorem ipsum dolor sit. <i>lorem</i> ipsum dolor.</p>
+        <p>Lorem, ipsum. <i>lorem</i> Lorem ipsum dolor sit. <i>lorem</i> Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum. <i>lorem</i> Lorem ipsum dolor sit. <i>lorem</i> Lorem,  <i>lorem</i> Lorem ipsum dolor sit. <i>lorem</i> ipsum dolor.</p>
+        <p>Lorem, ipsum. <i>lorem</i> Lorem ipsum dolor sit. <i>lorem</i> Lorem, ipsum dolor.</p>
+    </div>
+</body>
+</html>

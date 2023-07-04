@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attributes</title>
+</head>
+<body>
+    <h2>form Attributes</h2>
+    <pre>
+        action 
+        method = get and  post 
+        target
+    </pre>
+    <h2>text fields</h2>
+    <form action="#" method="get" target="_blank">
+        <label for="fitst" >First name</label>
+        <input type="text" name="f_name" id="fitst" placeholder=" enter your first name" readonly>
+        <label for="ln">Last name</label>
+        <input type="text" name="l_name" id="ln" placeholder="enter you last name" required>
+        <!-- <input type="submit"> -->
+        <input type="submit" value="ronit">
+    </form>
+ 
+    <h2>Radio button</h2>
+    <form action="#">
+        <input type="radio" id="html1" name="lang" disabled>
+        <label for="html1">HTML</label>
+        <input type="radio" name="lang" id="css" checked> 
+        <label for="css">CSS</label>
+        <input type="button" value="submit">
+    </form>
+    
+    <h2>Checkbox</h2>
+    <form action="">
+        <input type="checkbox" name="lang1" id="html" checked>
+        <label for="html">HTMl</label>
+        <input type="checkbox" name="lang2" id="css1">
+        <label for="css1">CSS</label>
+        <input type="checkbox" name="lang3" id="php" disabled>
+        <label for="php">PHP</label>
+        <input type="checkbox" name="lang4" id="java">
+        <label for="java">JAVA</label>
+        <input type="submit">
+    </form>
+    
+    <h1>Form elements</h1>
+    <p>input, label</p>
+    <h2>selected</h2>
+    <form action="">
+        <label for="car"> Coose a car :-</label>
+        <select name="car_name" id="car">
+            <!-- <select name="car_name" id="car" size="3" multiple> -->
+                <option value="">selected</option>
+            <option value="volvo">volvo</option>
+            <option value="bmw">Bmw</option>
+            <option value="audi" >audi</option>
+            <option value="volvo" selected>volvo</option>
+            <option value="bmw">Bmw</option>
+            <option value="audi">audi</option>
+        </select>
+        <input type="submit">
+    </form>
+<h2>optgroup</h2>
+    <form action="">
+        <label for="car">choose a car :-</label>
+        <select name="car_name" id="car">
+            <optgroup label="car">
+                <option value="volvo">volvo</option>
+                <option value="bmw">Bmw</option>
+                <option value="audi" >audi</option>
+                <option value="volvo" selected>volvo</option>
+            </optgroup>
+            <optgroup label="bike">
+                <option value="volvo">volvo</option>
+                <option value="bmw">Bmw</option>
+                <option value="audi" >audi</option>
+                <option value="volvo" selected>volvo</option>
+            </optgroup>
+        </select>
+        <input type="submit">
+    </form>
+    <h2>datalist</h2>
+    <form action="">
+        <label for="car">choose a car</label>
+        <input type="text" list="browsers" name="car_name" id="car">
+         <datalist id="browsers">
+            <option value="volvo">
+            <option value="bmw">
+            <option value="audi">
+            <option value="volvo">
+            <option value="volvo">
+            <option value="volvo">
+
+         </datalist>
+    </form>
+    <form action="/lec1.html">
+        <fieldset>
+            <legend>class form</legend>
+            <label for="f_name">First Name</label>
+            <input type="text" id="f_name" name="fname" placeholder="please enter your name"><br>   
+            <label for="l_name">Last Name </label>
+            <input type="text" id="l_name" name="lname" placeholder="please enter your name"><br>
+            <label for="mess">message</label>
+            <textarea name="message" id="mess" cols="10" rows="5"></textarea>
+            <button type="button" onclick="alert('hello abcoding')">Button</button>
+            <input type="submit">
+            <input type="button" onclick="alert('hello abcoding')" value="submit">
+        </fieldset>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data type</title>
+</head>
+<body>
+    <h2>js Data Type</h2>
+    <ul>
+        <li>string</li>
+        <li>number</li>
+        <li>Bigint</li>
+        <li>boolenan</li>
+        <li>undefined</li>
+        <li>null</li>
+        <li>object</li>
+        <li>array</li>
+        <li>date</li>
+    </ul>
+
+    <p id="test"></p>
+    <script>
+        //string
+        let x = "red";
+        let y = 'red';
+        let z = 'red "djsf"';
+
+        let a = 15+ 5+ "hello";
+        let b = "hello" + 15 + 5;
+        let c = "15" + "hello";
+        console.log(a);
+
+        // number
+        let d = "15";
+        let e = 15.5;
+        console.log(typeof(d));
+        console.log(typeof(e));
+
+        //boolean
+        let x1 = true;
+        let x2 = false;
+
+        let a1 = 5;
+        let a2 = 12;
+        let a3 = a1 > a2 ;
+        // document.getElementById("test").innerHTML = (5 == 5);
+        document.getElementById("test").innerHTML = a3;
+
+        //bigint 
+        let s = BigInt("453215632156321532156132156");
+        console.log(s);
+        
+        // undefined , null 
+        let x7 = "";
+        let x8;
+        console.log(x7);
+
+        //array
+        const x9 = ["nishank","bhavin","hardik"];
+        console.log(x9[0]);
+
+        // object
+        let x21 = {color: "red",bhavin:"godhani",prince:"abcd"}
+        console.log("hello object " + x21['color'] + " prince " + x21.bhavin);
+        // date
+        let dd = new Date("2023-06-29");
+        let dd1 = new Date().getDate();
+        console.log(dd);
+        console.log(dd1);
+
+        //type operator
+        document.getElementById("test").innerHTML = typeof(x21)
+    </script>
+</body>
+</html>
