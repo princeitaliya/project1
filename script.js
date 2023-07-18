@@ -1,11 +1,18 @@
-function abc(){
-    document.getElementById('lorem1').style.color = "red";
-    document.getElementById('lorem1').style.fontSize = "30px";
-    document.getElementById('lorem1').style.backgroundColor = "black";
+let input = document.getElementById('result');
+
+function addToInput(value) {
+  input.value += value;
 }
-document.getElementById('test').innerHTML = "hey Ronit ";
-function myfnd(){
-    // alert("hiiiii");
-    // console.log("hiiii");
-document.getElementById("test1").innerHTML ="hello ronit";
+
+function clearInput() {
+  input.value = '';
+}
+
+function deleteLast() {
+  input.value = input.value.slice(0, -1);
+}
+
+function calculate() {
+  let result = eval(input.value);
+  input.value = result;
 }

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="calculator">
+      <input type="text" id="result" disabled><br>
+      <button onclick="clearInput()">C</button>
+      <button onclick="deleteLast()">CE</button>
+      <button onclick="addToInput('%')">%</button>
+      <button onclick="addToInput('*')">*</button>
+      <button onclick="addToInput('7')">7</button>
+      <button onclick="addToInput('8')">8</button>
+      <button onclick="addToInput('9')">9</button>
+      <button onclick="addToInput('-')">-</button>
+      <button onclick="addToInput('4')">4</button>
+      <button onclick="addToInput('5')">5</button>
+      <button onclick="addToInput('6')">6</button>
+      <button onclick="addToInput('+')">+</button>
+      <button onclick="addToInput('1')">1</button>
+      <button onclick="addToInput('2')">2</button>
+      <button onclick="addToInput('3')">3</button>
+      <button onclick="calculate()">=</button>
+      <button onclick="addToInput('00')">00</button>
+      <button onclick="addToInput('0')">0</button>
+      <button onclick="addToInput('.')">.</button>
+      <button onclick="addToInput('/')">/</button>
+      <input type="text" id="result1" value="code by dishang webcoding">
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
